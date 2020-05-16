@@ -1,0 +1,19 @@
+<script type="text/javascript" src="validation.js"></script>
+<label for="startTime">Start Date:</label>
+
+<input type="datetime-local" id="startTime"
+       name="startTime" onmouseout="checkStartFutureDateStart(this)">
+
+<label for="interval">Interval:</label>
+
+<input type="time" id="interval" name="interval"
+        min="00:01" max="11:59" onmouseout="checkIntervalEndDate(this)">
+
+<label for="endTime">End Date:</label>
+
+<input type="datetime-local" id="endTime"
+        name="endTime" onmouseout="checkStartFutureDateEnd(this)">
+<!-- <input type="datetime-local" id="endTime"
+        name="endTime" value="2018-06-12T19:30"
+        min="2018-06-07T00:00" max=""> -->
+<button type="button">Save</button>
